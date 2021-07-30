@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row bg-primary text-white">
             <div class="col-12 mt-5 mb-5 pt-5 text-center">
-                <h1>Hosting en domeinnamen <small>door Made I.T.</small></h1>
+                <h1>Hosting en domeinnamen <small>door {{ config('app.name') }}</small></h1>
                 <h2 class="mt-4">Domeinnamen, webhosting, e-mail hosting, VPS<br><br>Eenvoudig, snel en betrouwbaar!</h2>
             </div>
         </div>
