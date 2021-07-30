@@ -4,8 +4,8 @@
 
 1. Download and install composer packages
 ```
-git clone https://github.com/bizhosting/hosting-panel.git
-cd hosting-panel
+git clone https://github.com/madeITBelgium/Bizhosting-White-Label-Hosting-Panel.git
+cd Bizhosting-White-Label-Hosting-Panel
 composer install
 cp .env.example .env
 ```
