@@ -71,7 +71,7 @@
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	padding: 12px 16px;
-	background: #476a8a;
+	background: $primary;
 	color: #fff; 
 }
 .plan .head h1, .plan .head h2, .plan .head h3, .plan .head .h1, .plan .head .h2, .plan .head .h3 {
@@ -125,7 +125,7 @@
 }
 .plan ul strong {
 	font-weight: 700;
-	color: #476a8a;
+	color: $primary;
 }
 .plan.recommended {
 	margin-top: 6px;
@@ -137,7 +137,7 @@
 .plan.recommended .head {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-	background: #476a8a;
+	background: $primary;
 }
 .plan.recommended .btn {
 	margin-bottom: 10px;

@@ -26,9 +26,10 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('extend:service')->dailyAt(7);
         $schedule->command('invoice:complete')->dailyAt(8);
-
+        
         $schedule->command('domainname:sync')->hourly();
         $schedule->command('hosting:sync')->hourly();
+        
     }
 
     /**

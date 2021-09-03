@@ -18,7 +18,7 @@
                         <div>
                             <i class="fas fa-euro-sign fa-4x d-block mx-auto"></i>
                             <div class="mt-2">
-                                <h3 class="text-center">Zeer voordelig, vanaf €{{ number_format(\MadeITBelgium\Hosting\Models\Topleveldomain::min('sell_price'), 2, ",", ".") }}</h3>
+                                <h3 class="text-center">Zeer voordelig, vanaf €{{ number_format(\MadeITBelgium\Hosting\Models\Topleveldomain::min('sell_price') * 1.21, 2, ",", ".") }}</h3>
                                 <p>Domeinnamen zijn maar 1 jaar geldig, je moet het dus elk jaar opnieuw verlengen. Door onze voordelige prijzen doe je dat met plezier, een kleine investering die zeer veel kan opbrengen. Dat vanaf €{{ number_format(\MadeITBelgium\Hosting\Models\Topleveldomain::min('sell_price') * 1.21, 2, ",", ".") }} incl. BTW per jaar.</p> 
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <i class="fas fa-server fa-4x d-block mx-auto"></i>
                             <div class="mt-2">
                                 <h3 class="text-center">Gratis DNS service</h3>
-                                <p>Met een domeinnaam alleen ben je niets, een domeinnaam kan je gebruiken voor je website of doorsturen naar een bestaande website. Bij Made I.T. hosting geniet je van een gratis DNS service voor het opzetten van je domeinnaam.</p> 
+                                <p>Met een domeinnaam alleen ben je niets, een domeinnaam kan je gebruiken voor je website of doorsturen naar een bestaande website. Bij {{ config('app.name') }} hosting geniet je van een gratis DNS service voor het opzetten van je domeinnaam.</p> 
                             </div>
                         </div>
                     </div>

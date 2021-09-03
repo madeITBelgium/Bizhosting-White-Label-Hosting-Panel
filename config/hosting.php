@@ -8,26 +8,48 @@ return [
     ],
 
     'hosting_packages' => [
-        '1GB' => [
-            'name' => '1GB',
-            'diskspace' => 1000,
+        '3GB' => [
+            'name' => '3GB',
+            'diskspace' => 3000,
             'subdomains' => 1,
             'mailaccounts' => 10,
             'databases' => 1,
             'include_domainname' => 0,
             'managed' => false,
-            'price' => 2,
-            'public' => false,
+            'price' => 5,
+            'public' => true,
         ],
-        '2GB_MANAGED' => [
-            'name' => '2GB',
-            'diskspace' => 2000,
+        '5GB' => [
+            'name' => '5GB',
+            'diskspace' => 5000,
+            'subdomains' => 1,
+            'mailaccounts' => 10,
+            'databases' => 1,
+            'include_domainname' => 0,
+            'managed' => false,
+            'price' => 8,
+            'public' => true,
+        ],
+        '15GB' => [
+            'name' => '15GB',
+            'diskspace' => 15000,
+            'subdomains' => 1,
+            'mailaccounts' => 10,
+            'databases' => 1,
+            'include_domainname' => 0,
+            'managed' => false,
+            'price' => 20,
+            'public' => true,
+        ],
+        '3GB_MANAGED' => [
+            'name' => '3GB',
+            'diskspace' => 3000,
             'subdomains' => 1,
             'mailaccounts' => 50,
             'databases' => 1,
             'include_domainname' => 1,
             'managed' => true,
-            'price' => 10,
+            'price' => 25,
             'public' => true,
         ],
         '5GB_MANAGED' => [
@@ -38,29 +60,28 @@ return [
             'databases' => 5,
             'include_domainname' => 1,
             'managed' => true,
-            'price' => 17.5,
+            'price' => 40,
             'public' => true,
         ],
-        '10GB_MANAGED' => [
-            'name' => '10GB',
-            'diskspace' => 10000,
+        '15GB_MANAGED' => [
+            'name' => '15GB',
+            'diskspace' => 15000,
             'subdomains' => 5,
             'mailaccounts' => 50,
             'databases' => 10,
             'include_domainname' => 1,
             'managed' => true,
-            'price' => 25,
+            'price' => 75,
             'public' => true,
         ],
     ],
 
     'team' => \App\Models\Team::class,
 
-    'domainname_fee' => 2, //Price * 2
+    'domainname_fee' => 2.2, //Price * 2
 
     'templates' => [
         "default" => 'Default',
-        "drupal6" => 'Drupal 6',
         "drupal7" => 'Drupal 7',
         "drupal8" => 'Drupal 8',
         "joomla" => 'Joomla',

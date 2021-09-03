@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7faab9df9eb5034973c8a43a28d32712",
+    "content-hash": "59f3b74b108137a365c2f5ce84e5f243",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6716,16 +6716,16 @@
         },
         {
             "name": "madeitbelgium/bizhosting",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/madeITBelgium/Bizhosting-SDK.git",
-                "reference": "695065fb22061089fd163f09996661e264f5f9a0"
+                "reference": "0ff212238ca0726ce8aa146c8cbb351bf677aaa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/madeITBelgium/Bizhosting-SDK/zipball/695065fb22061089fd163f09996661e264f5f9a0",
-                "reference": "695065fb22061089fd163f09996661e264f5f9a0",
+                "url": "https://api.github.com/repos/madeITBelgium/Bizhosting-SDK/zipball/0ff212238ca0726ce8aa146c8cbb351bf677aaa0",
+                "reference": "0ff212238ca0726ce8aa146c8cbb351bf677aaa0",
                 "shasum": ""
             },
             "require": {
@@ -6775,9 +6775,9 @@
             ],
             "support": {
                 "issues": "https://github.com/madeITBelgium/Bizhosting-SDK/issues",
-                "source": "https://github.com/madeITBelgium/Bizhosting-SDK/tree/1.0.0"
+                "source": "https://github.com/madeITBelgium/Bizhosting-SDK/tree/1.0.1"
             },
-            "time": "2021-07-30T10:11:30+00:00"
+            "time": "2021-07-30T13:03:18+00:00"
         },
         {
             "name": "madeitbelgium/hosting",
@@ -9113,5 +9113,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
