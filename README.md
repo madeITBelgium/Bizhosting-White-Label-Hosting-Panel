@@ -8,6 +8,8 @@ git clone https://github.com/madeITBelgium/Bizhosting-White-Label-Hosting-Panel.
 cd Bizhosting-White-Label-Hosting-Panel
 composer install
 cp .env.example .env
+php artisan key:generate
+php artisan migrate
 ```
 
 2. Change .env file (App name, Database, API Tokens)
