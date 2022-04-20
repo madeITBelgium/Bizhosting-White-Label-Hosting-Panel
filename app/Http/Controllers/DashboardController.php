@@ -14,7 +14,7 @@ class DashboardController extends Controller
         $user = auth()->user();
         $team = $user->currentTeam;
 
-        $domainnames = Domainname::get();
+        $domainnames = Domainname::where('team_id', $team->id)->get();
         if (count($domainnames) > 5) {
             if (Domainname::where('team_id', $team->id)->where('end_at', '<', now()->addDays(60))->orderBy('end_at', 'ASC')->count() > 0) {
                 $domainnames = Domainname::where('team_id', $team->id)->where('end_at', '<', now()->addDays(60))->limit(10)->orderBy('end_at', 'ASC')->get();

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Laravel\Jetstream\Jetstream;
 use MadeITBelgium\Vat\Facade\Vat;
+use Illuminate\Support\Facades\Http;
+use Exception;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -39,6 +41,14 @@ class CreateNewUser implements CreatesNewUsers
                 'password' => Hash::make($input['password']),
             ]), function (User $user) use ($input) {
                 $this->createTeam($user, $input);
+                
+                
+                if(config('app.emailservice')) {
+                    try {
+                        Http::post('https://www.email-service.be/api/1.0/subscribe/' . config('app.emailservice'), ['email' => $user->email, 'first_name' => $user->name]);
+                    } catch(Exception) {}
+                }
+                \App\Actions\Slack::send("New user: " . $user->email);
             });
         });
     }
