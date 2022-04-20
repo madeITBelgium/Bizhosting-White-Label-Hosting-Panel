@@ -30,6 +30,13 @@ php artisan migrate
 - resources/views/webhosting.blade.php
 - resources/views/welcome.blade.php
 
+7. Sync data
+```
+php artisan topleveldomain:sync
+php artisan domainname:sync
+php artisan hosting:sync
+```
+
 ## Upgrade
 TODO
 
