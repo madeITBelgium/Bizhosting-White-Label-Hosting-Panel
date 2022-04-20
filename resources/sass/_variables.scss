@@ -6,6 +6,10 @@ $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+$border-radius:               1.25rem !default;
+$border-radius-lg:            1.3rem !default;
+$border-radius-sm:            1.2rem !default;
+
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
@@ -19,8 +23,13 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 $primary: #251ECC;
+$success: #30E892;
+$warning: #FFB11F;
+$danger: #FF1F1F;
 
 $theme-colors: (
-  "primary": $primary,
-  "danger": #ff4136
+    "primary": $primary,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
 );

@@ -75,13 +75,6 @@
   flex: 1 1 0%;
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1250px;
-  }
-}
-
 .bg-light {
   background: #f3f4f6 !important;
 }
@@ -120,4 +113,9 @@
 a.icon-list-social-link {
   font-size: 20px;
   margin-right: 10px;
+}
+
+.footer-dark a {
+    color: #fff;
+    text-decoration: underline;
 }

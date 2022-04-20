@@ -10,8 +10,8 @@
             <div class="card shadow bg-light">
                 <div class="card-body bg-white px-5 py-3 border-bottom rounded-top">
                     <div class="mx-3 my-3">
-                        <div class="mb-4">
-                            <x-jet-application-logo style="width: 317px;" />
+                        <div class="mb-4 h2">
+                            Welkom {{ auth()->user()->name }}
                         </div>
     
                         <div class="text-muted">

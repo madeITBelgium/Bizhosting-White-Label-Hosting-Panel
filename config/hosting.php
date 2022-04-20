@@ -42,8 +42,8 @@ return [
             'public' => true,
         ],
         '3GB_MANAGED' => [
-            'name' => '3GB',
-            'diskspace' => 3000,
+            'name' => '5GB',
+            'diskspace' => 5000,
             'subdomains' => 1,
             'mailaccounts' => 50,
             'databases' => 1,
@@ -53,8 +53,8 @@ return [
             'public' => true,
         ],
         '5GB_MANAGED' => [
-            'name' => '5GB',
-            'diskspace' => 5000,
+            'name' => '15GB',
+            'diskspace' => 15000,
             'subdomains' => 3,
             'mailaccounts' => 50,
             'databases' => 5,
@@ -64,8 +64,8 @@ return [
             'public' => true,
         ],
         '15GB_MANAGED' => [
-            'name' => '15GB',
-            'diskspace' => 15000,
+            'name' => '30GB',
+            'diskspace' => 30000,
             'subdomains' => 5,
             'mailaccounts' => 50,
             'databases' => 10,
@@ -78,7 +78,7 @@ return [
 
     'team' => \App\Models\Team::class,
 
-    'domainname_fee' => 2.2, //Price * 2
+    'domainname_fee' => 1.4, //Price * 2
 
     'templates' => [
         "default" => 'Default',

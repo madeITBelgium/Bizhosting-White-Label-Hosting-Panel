@@ -1,5 +1,8 @@
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faCheck, faTimes, faServer, faUsers, faMobileAlt, faEuroSign, faListOl, faSearch, faEye, faPencilAlt, faTrash, faPlus, faDownload } from '@fortawesome/free-solid-svg-icons'
+import {
+    faCheck, faTimes, faServer, faUsers, faMobileAlt, faEuroSign, faListOl,
+    faSearch, faEye, faPencilAlt, faTrash, faPlus, faDownload, faHeart, faArrowRight,
+} from '@fortawesome/free-solid-svg-icons'
 
 import { faQuestionCircle, faLifeRing } from '@fortawesome/free-regular-svg-icons'
 
@@ -18,6 +21,8 @@ library.add(faPencilAlt)
 library.add(faTrash)
 library.add(faPlus)
 library.add(faDownload)
+library.add(faHeart)
+library.add(faArrowRight)
 
 library.add(faWordpress);
 library.add(faInstagram);

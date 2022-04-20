@@ -60,7 +60,6 @@
                                 <li>E-mail accounts</li>
                                 <li>Databases</li>
                                 <li>Inclusief domeinnaam</li>
-                                <li>Managed</li>
                                 <li>SSH toegang</li>
                             </ul>
                             <div class="price">
@@ -87,16 +86,9 @@
                                         <li class="d-none d-md-block"><i class="fas fa-times text-danger"></i></li>
                                     @endif
 
-                                    @if($hostingPackage['managed'])
-                                        <li class="d-md-none"><i class="fas fa-check text-success"></i></li>
-                                        <li class="d-none d-md-block"><i class="fas fa-check text-success"></i></li>
-                                    @else
-                                        <li class="d-md-none"><i class="fas fa-times text-danger"></i></li>
-                                        <li class="d-none d-md-block"><i class="fas fa-times text-danger"></i></li>
-                                    @endif
-
                                     <li class="d-md-none"><i class="fas fa-check text-success"></i></li>
                                     <li class="d-none d-md-block"><i class="fas fa-check text-success"></i><i data-placement="bottom" data-toggle="tooltip" title="Via SSH kan je commando's uitvoeren en dus gebruik maken van composer, git, npm, ..." class="far fa-question-circle"></i></li>
+
                                 </ul>
                                 <div class="price">
                                     <p class="h3">
@@ -104,7 +96,7 @@
                                         <span class="price-manage">{{ number_format($hostingPackage['price'], 2, ",", "") }}</span>
                                     </p>
                                     <p class="h4">Per maand</p>
-                                    <p data-toggle="tooltip" data-placement="bottom" class="h5" title="Natuurlijke personen en belgische bedrijven dienen 21% BTW te betalen. De prijs inclusief BTW is €18.15">Excl. BTW</p>
+                                    <p data-toggle="tooltip" data-placement="bottom" class="h5" title="Natuurlijke personen en belgische bedrijven dienen 21% BTW te betalen. De prijs inclusief BTW is €{{ number_format($hostingPackage['price'] * 1.21, 2, ",", "") }}">Excl. BTW - €{{ number_format($hostingPackage['price'] * 1.21, 2, ",", "") }} Incl. BTW</p>
                                 </div>
                                 <a href="/register" class="btn btn-primary madeit-offerte-button">Neem hosting</a>
                             </div>
@@ -178,7 +170,7 @@
                                         <span class="price-manage">{{ number_format($hostingPackage['price'], 2, ",", "") }}</span>
                                     </p>
                                     <p class="h4">Per maand</p>
-                                    <p data-toggle="tooltip" data-placement="bottom" class="h5" title="Natuurlijke personen en belgische bedrijven dienen 21% BTW te betalen. De prijs inclusief BTW is €18.15">Excl. BTW</p>
+                                    <p data-toggle="tooltip" data-placement="bottom" class="h5" title="Natuurlijke personen en belgische bedrijven dienen 21% BTW te betalen. De prijs inclusief BTW is €{{ number_format($hostingPackage['price'] * 1.21, 2, ",", "") }}">Excl. BTW - €{{ number_format($hostingPackage['price'] * 1.21, 2, ",", "") }} Incl. BTW</p>
                                 </div>
                                 <a href="/register" class="btn btn-primary madeit-offerte-button">Neem hosting</a>
                             </div>
