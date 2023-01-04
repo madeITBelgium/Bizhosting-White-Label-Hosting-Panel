@@ -37,6 +37,12 @@
                         <x-jet-nav-link href="{{ route('admin') }}" :active="request()->routeIs('admin')">
                             {{ __('Dashboard') }}
                         </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('hosting.admin.team.index') }}" :active="request()->routeIs('hosting.admin.team.index')">
+                            {{ __('Teams') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('hosting.admin.user.index') }}" :active="request()->routeIs('hosting.admin.user.index')">
+                            {{ __('Users') }}
+                        </x-jet-nav-link>
                         <x-jet-nav-link href="{{ route('hosting.admin.domainname.index') }}" :active="request()->routeIs('hosting.admin.domainname.index')">
                             {{ __('Domainname') }}
                         </x-jet-nav-link>
