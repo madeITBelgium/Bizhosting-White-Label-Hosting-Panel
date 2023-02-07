@@ -10,26 +10,24 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.3.1",
-        "@tailwindcss/typography": "^0.4.0",
-        "alpinejs": "^2.7.3",
+        "@babel/preset-react": "^7.16.7",
+        "@popperjs/core": "^2.5.3",
+        "alpinejs": "^3.2.6",
         "axios": "^0.21",
-        "bootstrap": "^4.6.0",
-        "jquery": "^3.5.1",
+        "bootstrap": "^5.2.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "popper.js": "^1.16.1",
         "postcss": "^8.1.14",
         "postcss-import": "^14.0.1",
         "resolve-url-loader": "^4.0.0",
-        "sass": "^1.35.1",
-        "sass-loader": "^12.1.0",
-        "tailwindcss": "^2.2.2"
+        "sass": "^1.48.0",
+        "sass-loader": "^12.4.0"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.35",
-        "@fortawesome/free-brands-svg-icons": "^5.15.3",
-        "@fortawesome/free-regular-svg-icons": "^5.15.3",
-        "@fortawesome/free-solid-svg-icons": "^5.15.3"
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-regular-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/fontawesome-free": "^5.15.4"
     }
 }

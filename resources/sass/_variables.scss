@@ -1,16 +1,15 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Verdana', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
-$border-radius:               1.25rem !default;
-$border-radius-lg:            1.3rem !default;
-$border-radius-sm:            1.2rem !default;
+$border-radius:               0.25rem !default;
+$border-radius-lg:            0.3rem !default;
+$border-radius-sm:            0.2rem !default;
 
-// Colors
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -22,14 +21,38 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-$primary: #251ECC;
-$success: #30E892;
-$warning: #FFB11F;
-$danger: #FF1F1F;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$primary: #3D73B3;
+$success: #71B142;
+$secondary: #525252;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
 
 $theme-colors: (
-    "primary": $primary,
-    "success": $success,
-    "warning": $warning,
-    "danger": $danger,
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "default": #FFFFFF,
 );
+
+$card-border-radius: 0.5rem;

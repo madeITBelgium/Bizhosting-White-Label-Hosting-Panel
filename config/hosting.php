@@ -8,6 +8,17 @@ return [
     ],
 
     'hosting_packages' => [
+        '1GB' => [
+            'name' => '1GB',
+            'diskspace' => 1000,
+            'subdomains' => 0,
+            'mailaccounts' => 10,
+            'databases' => 0,
+            'include_domainname' => 0,
+            'managed' => false,
+            'price' => 2.5,
+            'public' => false,
+        ],
         '3GB' => [
             'name' => '3GB',
             'diskspace' => 3000,

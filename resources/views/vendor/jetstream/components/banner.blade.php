@@ -19,7 +19,7 @@
                     </svg>
                 </span>
 
-                <p class="m-0 ml-3 font-weight-normal text-white" x-text="message"></p>
+                <p class="m-0 ms-3 font-weight-normal text-white" x-text="message"></p>
             </div>
 
             <div class="flex-shrink-0">

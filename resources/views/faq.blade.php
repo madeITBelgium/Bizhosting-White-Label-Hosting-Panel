@@ -1,8 +1,8 @@
 <x-guest-layout>
     <!-- Page Header-->
-    <div class="container-fluid">
-        <div class="row bg-primary text-white">
-            <div class="col-12 pt-5 mt-5 mb-5 text-center">
+    <div class="container mt-5">
+        <div class="row mt-5 pt-5">
+            <div class="col-12 col-md-7 my-5 py-5">
                 <h1>
                     Veel gestelde vragen
                 </h1>

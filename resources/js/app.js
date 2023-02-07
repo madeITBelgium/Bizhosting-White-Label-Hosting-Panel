@@ -1,4 +1,7 @@
 require('./bootstrap');
 
-require('alpinejs');
-require('./fontawesome');
+import Alpine from 'alpinejs';
+Alpine.plugin(focus)
+window.Alpine = Alpine;
+
+Alpine.start();

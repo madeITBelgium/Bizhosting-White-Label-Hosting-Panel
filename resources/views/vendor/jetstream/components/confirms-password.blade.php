@@ -38,7 +38,11 @@
             {{ __('Cancel') }}
         </x-jet-secondary-button>
 
-        <x-jet-button class="ml-2" wire:click="confirmPassword" wire:loading.attr="disabled">
+        <x-jet-button class="ms-2" wire:click="confirmPassword" wire:loading.attr="disabled">
+            <div wire:loading wire:target="confirmPassword" class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
             {{ $button }}
         </x-jet-button>
     </x-slot>
