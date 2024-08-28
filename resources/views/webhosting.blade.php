@@ -109,7 +109,6 @@
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        * Managed webhosting is een technische ondersteuning waar wij zorgen voor updates, de snelheid van je website, ...<br>
                         - Elk hosting pakket wordt dagelijks gebackupt <br>
                     </div>
                 </div>
@@ -117,7 +116,7 @@
         </div>
         <div class="row mb-5">
             <div class="pricing-tables attached">
-                <h2 class="text-center">Hosting pakketten</h2>
+                <h2 class="text-center">Managed webhosting pakketten</h2>
                 <div class="row mt-3 mb-4">
                     <div class="col-sm-3 d-none d-md-block">
                         <div class="plan first">

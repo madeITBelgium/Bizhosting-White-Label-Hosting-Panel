@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <h2 class="text-center mb-2">Controleer of je domeinnaam nog vrij is.</h2>
                         <div class="input-group mb-3">
-                            <x-jet-input type="text" class="{{ $errors->has('domainname') ? 'is-invalid' : '' }}" placeholder="{{ __('Domainname ex.: example.com') }}" wire:model.defer="domainname" />
+                            <x-input type="text" class="{{ $errors->has('domainname') ? 'is-invalid' : '' }}" placeholder="{{ __('Domainname ex.: example.com') }}" wire:model="domainname" />
                             <button class="btn btn-primary" wire:loading.attr="disabled" type="button" wire:click="checkDomainname()">Controleer</button>
                         </div>
 

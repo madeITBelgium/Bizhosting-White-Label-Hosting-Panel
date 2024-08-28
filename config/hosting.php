@@ -24,7 +24,7 @@ return [
             'diskspace' => 3000,
             'subdomains' => 1,
             'mailaccounts' => 10,
-            'databases' => 1,
+            'databases' => 2,
             'include_domainname' => 0,
             'managed' => false,
             'price' => 5,
@@ -107,4 +107,7 @@ return [
     ],
 
     'admin_email' => env('APP_CONTACT_EMAIL', 'info@example.com'),
+
+    'payment_provider' => 'stripe', //mollie
+    'stripe_key' => env('STRIPE_KEY', ''),
 ];

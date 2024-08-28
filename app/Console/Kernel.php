@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('extend:service')->dailyAt(7);
-        //$schedule->command('invoice:complete')->dailyAt(8);
+        $schedule->command('invoice:complete')->dailyAt(8);
         
         $schedule->command('domainname:sync')->hourly();
         $schedule->command('hosting:sync')->hourly();

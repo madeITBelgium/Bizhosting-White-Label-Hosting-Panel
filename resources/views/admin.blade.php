@@ -11,7 +11,7 @@
                 <div class="card-body bg-white px-5 py-3 border-bottom rounded-top">
                     <div class="mx-3 my-3">
                         <div class="mb-4">
-                            <x-jet-application-logo style="width: 317px;" /> Hosting Admin
+                            <x-application-logo style="width: 317px;" /> Hosting Admin
                         </div>
     
                         <div class="text-muted">

@@ -22,26 +22,24 @@
     "require": {
         "php": "^7.3|^8.0",
         "alek13/slack": "^2.2",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "kkomelin/laravel-translatable-string-exporter": "^1.13",
-        "laravel/framework": "^8.40",
-        "laravel/jetstream": "^2.3",
-        "laravel/sanctum": "^2.6",
+        "laravel/framework": "^10.0",
+        "laravel/jetstream": "^4.0",
+        "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.5",
+        "livewire/livewire": "^3.0",
         "madeitbelgium/vat": "^1.6",
         "madeitbelgium/hosting": "^1.1"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
+        "spatie/laravel-ignition": "^2.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
-        "nascent-africa/jetstrap": "^2.4",
-        "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "madeitbelgium/jetstrap": "^1.0",
+        "nunomaduro/collision": "^7.0",
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {

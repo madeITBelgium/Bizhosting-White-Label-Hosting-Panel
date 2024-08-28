@@ -3,7 +3,7 @@
     <div class="container-fluid home-gradient">
         <div class="container">
             <div class="row my-5 pt-5">
-                <div class="col-12 col-md-7 align-self-center">
+                <div class="col-12 col-md-7 align-self-end">
                     <h1 style="font-size: 3rem">De hosting die je zoekt vind je bij <strong>Hosting Expert</strong></h1>
                     <h2 class="my-4 h4">Hosting Expert is de perfecte keuze wanneer je opzoek bent naar <strong>moderne webhosting</strong> met uitstekende kwaliteit.</h2>
                 </div>
@@ -21,6 +21,7 @@
                 <div class="card shadow">
                     <div class="card-body">
                         @livewire('public-domainname-check')
+
                         <div class="d-flex justify-content-around text-primary">
                             @foreach(\MadeITBelgium\Hosting\Models\Topleveldomain::whereIn('name', ['.be', '.nl', '.com', '.fr', '.eu', '.net', '.vlaanderen'])->get() as $tld)
                                 <div>{{ $tld->name }} • €{{ number_format($tld->sell_price * 1.21, 2, ",", ".") }}</div>
@@ -93,10 +94,10 @@
             <div class="col-12 col-md-6">
                 <h3>Alles start met een goede domeinnaam</h3>
                 <p>Bij Hosting Expert heb je keuze uit meer dan 1.500 domeinnaam extensies. Hiermee zijn we bij één grootste domeinnaam aanbieders en ben je zeker van jouw bijpassende naam!</p>
-                <a href="" class="text-success">Jouw domeinnaam kopen? Controlleer de beschikbaarheid! <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="row my-3 py-3">
+        <div class="text-center text-success">Jouw domeinnaam kopen? Controlleer de beschikbaarheid! <i class="fas fa-arrow-down"></i></div>
+        <div class="row my-3">
             <div class="col">
                 <div class="card shadow">
                     <div class="card-body">

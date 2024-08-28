@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/webhosting', [\App\Http\Controllers\HomeController::class, 'webhosting'])->name('home.webhosting');
-Route::get('/domeinnaam', \App\Http\Livewire\Domainname::class)->name('home.domainname');
+Route::get('/domeinnaam', \App\Livewire\Domainname::class)->name('home.domainname');
 Route::get('/faq', [\App\Http\Controllers\HomeController::class, 'faq'])->name('home.faq');
-Route::get('/contact', \App\Http\Livewire\Contact::class)->name('home.contact');
+Route::get('/contact', \App\Livewire\Contact::class)->name('home.contact');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 

@@ -393,7 +393,7 @@
     "Yearly cost": "Jaarlijkse kost",
     "Yearly revenue": "Jaarlijkse omzet",
     "Yearly Revenue": "Jaarlijkse omzet",
-    "You can easily pay the invoice online via the button below.": "U kunt de factuur eenvoudig online betalen via onderstaande knop.",
+    "You can easily pay the invoice online via the button below. Please do this before the due date!": "U kunt de factuur eenvoudig online betalen via onderstaande knop. Gelieve dit te doen voor de vervaldatum!",
     "You can easily pay the invoice online.": "U kunt de factuur eenvoudig online betalen.",
     "You can manage DNS settings, email accounts, databases or cron jobs on our website.": "Op onze website kunt u DNS-instellingen, e-mailaccounts, databases of cron-jobs beheren.",
     "You can manage the nameservers on our website.": "U kunt de nameservers op onze website beheren.",
@@ -409,5 +409,6 @@
     "You may accept this invitation by clicking the button below:": "U kunt deze uitnodiging accepteren door op de onderstaande knop te klikken:",
     "You may delete any of your existing tokens if they are no longer needed.": "Je kunt al je bestaande tokens verwijderen als ze niet langer nodig zijn.",
     "You may not delete your personal team.": "Je mag je persoonlijke team niet verwijderen.",
-    "You may not leave a team that you created.": "Je kan het team dat je aangemaakt hebt niet verlaten."
+    "You may not leave a team that you created.": "Je kan het team dat je aangemaakt hebt niet verlaten.",
+    "Due Date": "Vervaldatum"
 }

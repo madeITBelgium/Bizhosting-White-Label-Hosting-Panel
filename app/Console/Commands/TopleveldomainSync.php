@@ -48,6 +48,23 @@ class TopleveldomainSync extends Command
             if ($results > 0) {
                 foreach ($data->data as $data) {
                     $price = ceil($data->sell_price * config('hosting.domainname_fee'));
+
+                    $tld = TopLevelDomain::where('remote_id', $data->id)->first();
+                    $prevBuyPrice = $tld ? $tld->buy_price : 0;
+                    $prevSellPrice = $tld ? $tld->sell_price : 0;
+
+                    if(in_array($data->name, ['.be', '.nl'])) {
+                        $price = 10;
+                    }
+
+                    if(in_array($data->name, ['.eu'])) {
+                        $price = 12;
+                    }
+
+                    if(in_array($data->name, ['.net'])) {
+                        $price = 20;
+                    }
+
                     Topleveldomain::updateOrCreate([
                         'remote_id' => $data->id,
                         'name' => $data->name,
@@ -55,6 +72,14 @@ class TopleveldomainSync extends Command
                         "buy_price" => $data->sell_price,
                         "sell_price" => $price,
                     ]);
+
+                    if($tld) {
+                        if($prevBuyPrice != $data->sell_price || $prevSellPrice != $price) {
+                            $this->line('Updated TLD: ' . $data->name . ' (' . $data->id . ') Buy: €' . $prevBuyPrice . ' -> ' . $data->sell_price . ' Sell: €' . $prevSellPrice . ' -> ' . $price);
+                        }
+                    } else {
+                        $this->line('Added TLD: ' . $data->name . ' (' . $data->id . ') Buy: €' . $data->sell_price . ' Sell: €' . $price);
+                    }
                 }
             }
             $page++;
